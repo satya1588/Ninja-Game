@@ -1501,7 +1501,7 @@
                 let h = ~~(1600 * (t.touches[e].pageX - i.left) / i.width / 400);
                 M[37] = M[37] || 0 == h,
                     M[39] = M[39] || 1 == h,
-                    M[13,40] = M[13,40] || ae(2, h, 3)
+                    M[13] = M[13] || ae(2, h, 3)
             }
         }
         ),
@@ -1525,7 +1525,7 @@
         }
         ),
         aN = {
-            et: () => M[13,40] || M[38] || M[87] || M[90] || bk(0) || bk(1),
+            et: () => M[13] || M[38] || M[87] || M[90] || bk(0) || bk(1),
             left: () => M[37] || M[65] || M[81] || bk(14) || dB(0, -1),
             eI: () => M[39] || M[68] || bk(15) || dB(0, 1)
         },
@@ -1812,7 +1812,7 @@
                 G._e && J(() => G._e.__()),
                 J(() => {
                     if (G.H % 2 < 1.5 && 1 == G.dt) {
-                        let t = ["PRESS [Down key] TO START", df.toUpperCase()];
+                        let t = ["PRESS [OK] TO START", df.toUpperCase()];
                         G.bm && t.unshift(""),
                             t.forEach((t, i) => {
                                 R.textAlign = "center",
